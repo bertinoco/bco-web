@@ -1,0 +1,399 @@
+/* ============================================================
+   BERTINO CONSULTING — styles.css
+   ============================================================ */
+
+/* ── Custom properties ────────────────────────────────────── */
+:root {
+  --color-primary:     #2A3FFF;
+  --color-bg:          #FAFAFA;
+  --color-text:        #111111;
+  --color-muted:       #555555;
+  --color-card-bg:     #F0F0F0;
+  --color-footer-bg:   #111111;
+  --color-footer-text: #FAFAFA;
+  --color-border:      #E0E0E0;
+  --color-placeholder: #D0D0D0;
+
+  --space-1:  8px;
+  --space-2:  16px;
+  --space-3:  24px;
+  --space-4:  32px;
+  --space-6:  48px;
+  --space-8:  64px;
+  --space-12: 96px;
+
+  --radius: 12px;
+  --max-width: 960px;
+  --font-base: 'Inter', sans-serif;
+
+  --nav-height: 64px;
+}
+
+/* ── Reset & base ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ── Layout utility ───────────────────────────────────────── */
+.container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+/* Two-column section layout: label | body */
+.section-grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.section-label span {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  padding-top: 6px; /* optical alignment with body text */
+}
+
+.section-body p + p {
+  margin-top: var(--space-3);
+}
+
+/* ── Navigation ───────────────────────────────────────────── */
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.2s ease, border-bottom-color 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+
+#nav.scrolled {
+  background-color: var(--color-bg);
+  border-bottom-color: var(--color-border);
+}
+
+.nav-inner {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.logo-mark {
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: color 0.15s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+/* ── Hero ─────────────────────────────────────────────────── */
+#hero {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
+}
+
+#hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  max-width: 16ch;
+  margin-bottom: var(--space-4);
+}
+
+.hero-sub {
+  font-size: 1.125rem;
+  color: var(--color-muted);
+  max-width: 60ch;
+  line-height: 1.7;
+  margin-bottom: var(--space-8);
+}
+
+.hero-image-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: var(--color-placeholder);
+  border-radius: var(--radius);
+}
+
+/* ── About ────────────────────────────────────────────────── */
+#about {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
+  border-top: 1px solid var(--color-border);
+}
+
+#about .section-body {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--color-text);
+}
+
+/* ── Services ─────────────────────────────────────────────── */
+#services {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
+  border-top: 1px solid var(--color-border);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.service-card {
+  padding: var(--space-4);
+}
+
+.service-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+  color: var(--color-text);
+}
+
+.service-card p {
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+.callout-card {
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+}
+
+.callout-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: var(--space-2) !important;
+}
+
+.callout-card p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+/* ── Clients ──────────────────────────────────────────────── */
+#clients {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
+  border-top: 1px solid var(--color-border);
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.client-column-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: var(--space-3);
+}
+
+.client-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.client-column li {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+/* ── Footer / Contact ─────────────────────────────────────── */
+#contact {
+  background-color: var(--color-footer-bg);
+  color: var(--color-footer-text);
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-8);
+}
+
+.footer-top {
+  padding-bottom: var(--space-12);
+}
+
+.logo-mark-large {
+  margin-bottom: var(--space-6);
+}
+
+#contact h2 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  max-width: 18ch;
+  margin-bottom: var(--space-4);
+  color: var(--color-footer-text);
+}
+
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.15s ease;
+}
+
+.cta-link:hover {
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(250, 250, 250, 0.12);
+}
+
+.footer-copy {
+  font-size: 0.8125rem;
+  color: rgba(250, 250, 250, 0.5);
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.footer-social a {
+  font-size: 0.8125rem;
+  color: rgba(250, 250, 250, 0.5);
+  transition: color 0.15s ease;
+}
+
+.footer-social a:hover {
+  color: var(--color-primary);
+}
+
+/* ── Responsive — 768px ───────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Nav */
+  .nav-links {
+    gap: var(--space-3);
+  }
+
+  .nav-links a {
+    font-size: 0.8125rem;
+  }
+
+  .nav-logo-text {
+    display: none; /* show only the mark on small screens */
+  }
+
+  /* Hero */
+  #hero {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+  }
+
+  /* Section grids: stack label above body */
+  .section-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  /* Services grid: single column */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Clients grid: single column */
+  .clients-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  /* Footer bottom: stack */
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    display: none; /* hide links entirely on very small screens */
+  }
+}
