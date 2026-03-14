@@ -2,19 +2,19 @@
 
 Professional website for Bertino Consulting, a content systems practice specializing in language infrastructure and AI-assisted content workflows at scale.
 
-## 🌐 Live Site
+## Live Site
 
 Visit: [bertino.co](https://bertino.co)
 
 ---
 
-## 📋 About
+## About
 
 Bertino Consulting is led by Joe Bertino, a content systems consultant who works at the edge of language, technology, and product. With over a decade of experience working embedded inside leading fintechs — including Klarna, Tink, and Trustly — Joe helps ambitious product teams build language infrastructure and the AI-assisted tooling that keeps content consistent, compliant, and clear at scale.
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 - **HTML5** — Semantic markup for accessibility and SEO
 - **CSS3** — Custom design system with responsive layout
@@ -24,7 +24,7 @@ Bertino Consulting is led by Joe Bertino, a content systems consultant who works
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 bertino-consulting/
@@ -35,7 +35,7 @@ bertino-consulting/
 
 ---
 
-## 🎨 Design System
+## Design System
 
 ### Colors
 
@@ -58,19 +58,19 @@ Consistent 8px base unit: `8px, 16px, 24px, 32px, 48px, 64px, 96px`
 
 ---
 
-## 🚀 SEO & Performance
+## SEO & Performance
 
-- ✅ Schema.org structured data (`Person` + `Organization`)
-- ✅ Open Graph tags for social media sharing
-- ✅ AI crawler permissions (GPTBot, Claude-Web)
-- ✅ Mobile-responsive design
-- ✅ Semantic HTML for accessibility
-- ✅ Optimized meta tags
-- ✅ Fast loading (no frameworks, no build step)
+- Schema.org structured data (`Person` + `Organization`)
+- Open Graph tags for social media sharing
+- AI crawler permissions (GPTBot, Claude-Web)
+- Mobile-responsive design
+- Semantic HTML for accessibility
+- Optimized meta tags
+- Fast loading (no frameworks, no build step)
 
 ---
 
-## 📱 Responsive Design
+## Responsive Design
 
 Fully responsive with breakpoints at:
 
@@ -80,7 +80,7 @@ Fully responsive with breakpoints at:
 
 ---
 
-## 🔧 Local Development
+## Local Development
 
 1. Clone this repository
 2. Open `index.html` in your browser
@@ -88,13 +88,13 @@ Fully responsive with breakpoints at:
 
 ---
 
-## 📝 License
+## License
 
 © 2026 Bertino Consulting AB. All rights reserved.
 
 ---
 
-## 📧 Contact
+## Contact
 
 Joe Bertino — [joe@bertino.co](mailto:joe@bertino.co)
 
