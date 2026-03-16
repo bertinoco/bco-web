@@ -171,10 +171,10 @@ a {
   margin-bottom: var(--space-8);
 }
 
-.hero-image-placeholder {
+.hero-image {
   width: 100%;
   aspect-ratio: 16 / 10;
-  background-color: var(--color-placeholder);
+  object-fit: cover;
   border-radius: var(--radius);
 }
 
