@@ -132,6 +132,11 @@ a {
   flex-shrink: 0;
 }
 
+.nav-wordmark {
+  height: 1.5rem; /* adjust based on your image */
+  width: auto;
+}
+
 .nav-links {
   display: flex;
   gap: var(--space-4);
@@ -290,6 +295,8 @@ a {
 }
 
 .logo-mark-large {
+  height: 80px;
+  width: auto;
   margin-bottom: var(--space-6);
 }
 
@@ -357,7 +364,8 @@ a {
     font-size: 0.8125rem;
   }
 
-  .nav-logo-text {
+  .nav-logo-text,
+  .nav-wordmark {
     display: none; /* show only the mark on small screens */
   }
 
