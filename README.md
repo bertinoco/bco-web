@@ -1,6 +1,6 @@
 # Bertino Consulting
 
-Professional website for Bertino Consulting, a content systems practice specializing in language infrastructure and AI-assisted content workflows at scale.
+Professional website for Bertino Consulting, a content systems practice specializing in language infrastructure and AI-assisted content workflows.
 
 ## Live Site
 
