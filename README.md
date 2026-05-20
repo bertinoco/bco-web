@@ -9,8 +9,8 @@ Visit: [bertino.co](https://bertino.co)
 ---
 
 ## About
+Bertino Consulting is a content systems practice led by Joe Bertino — a practitioner who designs the language infrastructure behind complex products.
 
-Bertino Consulting is led by Joe Bertino, a content systems consultant who works at the edge of language, technology, and product. With over a decade of experience working embedded inside leading fintechs — including Klarna, Tink, and Trustly — Joe helps ambitious product teams build language infrastructure and the AI-assisted tooling that keeps content consistent, compliant, and clear at scale.
 
 ---
 
