@@ -216,20 +216,20 @@ a {
   padding: 0;
 }
 
-.service-card h3::before {
+.service-card h3::after {
   content: '';
   display: block;
   width: 32px;
   height: 3px;
   background-color: var(--color-primary);
   border-radius: 2px;
-  margin-bottom: var(--space-3);
+  margin-top: var(--space-2);
 }
 
 .service-card h3 {
   font-size: 1rem;
   font-weight: 700;
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
   color: var(--color-text);
 }
 
@@ -274,12 +274,20 @@ a {
 }
 
 .client-column-label {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-muted);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
   margin-bottom: var(--space-3);
+}
+
+.client-column-label::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+  margin-top: var(--space-2);
 }
 
 .client-column ul {
