@@ -1,0 +1,38 @@
+---
+layout: default
+title: Blog — Bertino Consulting
+description: "Observations on content systems, UX writing, and working at the edge of language and product."
+---
+
+<main>
+  <section id="blog-index" aria-labelledby="blog-heading">
+    <div class="container">
+      <div class="section-grid">
+        <div class="section-label">
+          <span id="blog-heading">Blog</span>
+        </div>
+        <div class="section-body">
+          {% if site.posts.size > 0 %}
+          <ul class="post-list" role="list">
+            {% for post in site.posts %}
+            <li class="post-list-item">
+              <h2 class="post-list-title">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </h2>
+              <div class="post-list-meta">
+                <span>{{ post.date | date: "%B %-d, %Y" }}</span>
+                {% for tag in post.tags %}
+                  <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p>No posts yet — check back soon.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

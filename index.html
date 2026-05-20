@@ -1,224 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+layout: default
+title: "Bertino Consulting — Content systems for ambitious product teams"
+description: "Bertino Consulting helps ambitious scale-ups build content systems — the language infrastructure, AI-assisted workflows, and governance that keep product content clear, consistent, and compliant at scale."
+og_title: "Content systems for teams that can't afford inconsistency — Bertino Consulting"
+og_description: "We help ambitious product teams design content systems — the language infrastructure and AI-assisted tooling that keep content clear, consistent, and compliant across every touchpoint."
+---
 
-  <!-- Primary meta -->
-  <title>Bertino Consulting — Content systems for ambitious product teams</title>
-  <meta name="description" content="Bertino Consulting helps ambitious scale-ups build content systems — the language infrastructure, AI-assisted workflows, and governance that keep product content clear, consistent, and compliant at scale.">
+<main>
 
-  <!-- Robots — allow major AI crawlers -->
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <!-- GPTBot and Claude-Web are permitted by default robots: index, follow -->
-  <!-- To explicitly allow: add rules in robots.txt for GPTBot and ClaudeBot -->
-
-  <!-- OpenGraph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://bertino.co/">
-  <meta property="og:image" content="https://bertino.co/og-image.png">
-  <meta property="og:title" content="Content systems for teams that can't afford inconsistency — Bertino Consulting">
-  <meta property="og:description" content="We help ambitious product teams design content systems — the language infrastructure and AI-assisted tooling that keep content clear, consistent, and compliant across every touchpoint.">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Schema.org structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Bertino Consulting",
-        "url": "https://bertino.co",
-        "description": "A content systems practice helping ambitious product teams build the language infrastructure, AI-assisted workflows, and governance that keep content clear, consistent, and trustworthy at scale.",
-        "founder": {
-          "@type": "Person",
-          "@id": "https://bertino.co/#joe"
-        },
-        "areaServed": ["SE", "EU"],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "joe@bertino.co",
-          "contactType": "customer service"
-        }
-      },
-      {
-        "@type": "Person",
-        "@id": "https://bertino.co/#joe",
-        "name": "Joe Bertino",
-        "jobTitle": "UX Content Designer & Principal Consultant",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Bertino Consulting"
-        },
-        "url": "https://bertino.co",
-        "sameAs": [
-          "https://linkedin.com/in/joebertino"
-        ]
-      }
-    ]
-  }
-  </script>
-</head>
-<body>
-
-  <!-- ===================== NAV ===================== -->
-  <nav id="nav" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo" aria-label="Bertino Consulting — home">
-        <img src="images/wordmark.svg" alt="Bertino Consulting" class="nav-wordmark">
-      </a>
-      <ul class="nav-links" role="list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#clients">Clients</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- ===================== MAIN ===================== -->
-  <main>
-
-    <!-- HERO -->
-    <section id="hero" aria-labelledby="hero-heading">
-      <div class="container">
-        <h1 id="hero-heading">Content systems for teams that can't afford inconsistency.</h1>
-        <p class="hero-sub">We help ambitious scale-ups design and implement content systems — the language infrastructure and AI-assisted tooling that keep your content consistent, compliant, and clear across every touchpoint.</p>
-        <img src="images/hero-image.jpg" alt="Editorial photo" class="hero-image">
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="section-grid">
-          <div class="section-label">
-            <span id="about-heading">About</span>
-          </div>
-          <div class="section-body">
-            <p>Bertino Consulting is a content systems practice led by Joe Bertino, a practitioner who designs the language infrastructure behind complex products.</p>
-            <p>For over a decade, Joe has worked embedded inside leading fintechs — including Klarna, Tink, and Trustly — designing content systems that support compliance and sustainable growth.</p>
-            <p>Today, that same approach extends beyond fintech into media and gaming. His current embedded engagement is with Mojang Studios, where he leads UX writing across the Minecraft player experience. Joe works directly in codebases and design systems — creating PRs, managing branches, and shipping alongside engineers and design system leads, not just upstream of them.</p>
-            <p>Originally from upstate New York, Joe has worked with agencies and startups across New York City, San Francisco, and Copenhagen. He's been based in Stockholm since 2014, where he lives with his wife and children.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" aria-labelledby="services-heading">
-      <div class="container">
-        <div class="section-grid">
-          <div class="section-label">
-            <span id="services-heading">Services</span>
-          </div>
-          <div class="section-body">
-            <div class="services-grid">
-              <article class="service-card">
-                <h3>Embedded consultancy</h3>
-                <p>I join your product or UX team as an embedded partner, helping you design, test, and scale language systems from the inside. This model accelerates delivery while building long-term content operations that stay clear, compliant, and consistent after I leave.</p>
-              </article>
-              <article class="service-card">
-                <h3>Fractional advisor</h3>
-                <p>I provide ongoing strategic support for solo content designers and UX writers — acting as a senior partner to review work, set priorities, and build team confidence. This model helps growing organizations maintain quality and momentum without the overhead of a full-time hire.</p>
-              </article>
-              <article class="service-card">
-                <h3>Audits as a service</h3>
-                <p>I conduct focused audits of your UX content and AI-assisted workflows to uncover gaps, inconsistencies, and opportunities for optimization. You'll receive actionable insights, prioritized recommendations, and a roadmap for improving clarity, compliance, and discoverability at scale.</p>
-              </article>
-              <article class="service-card">
-                <h3>Something else?</h3>
-                <p>Get in touch to schedule a discovery call or submit a custom proposal. If I can't help, I'll do my best to refer you to someone great.</p>
-              </article>
-            </div>
-
-            <div class="callout-card">
-              <p class="callout-label">How I like to collaborate</p>
-              <p>I work best as part of your team — hybrid in Stockholm or fully remote across the EU. Engagements start at six months, billed hourly at 1&nbsp;200&nbsp;SEK. I'm open to occasional travel when it adds value.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CLIENTS -->
-    <section id="clients" aria-labelledby="clients-heading">
-      <div class="container">
-        <div class="section-grid">
-          <div class="section-label">
-            <span id="clients-heading">Clients</span>
-          </div>
-          <div class="section-body">
-            <div class="clients-grid">
-              <div class="client-column">
-                <p class="client-column-label">Financial services</p>
-                <ul role="list">
-                  <li>Klarna</li>
-                  <li>Trustly</li>
-                  <li>Tink by Visa</li>
-                  <li>Swedbank Pay × BBH</li>
-                  <li>Bambora by Worldline</li>
-                  <li>Transfer Galaxy</li>
-                </ul>
-              </div>
-              <div class="client-column">
-                <p class="client-column-label">Media & gaming</p>
-                <ul role="list">
-                  <li>Nextory
-                  <li>Minecraft: Bedrock Edition</li>
-                  <li>Minecraft Dungeons II</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ===================== FOOTER / CONTACT ===================== -->
-  <footer id="contact" aria-labelledby="contact-heading">
+  <!-- HERO -->
+  <section id="hero" aria-labelledby="hero-heading">
     <div class="container">
-      <div class="footer-top">
-        <img src="images/icons.svg" alt="Bertino Consulting" class="logo-mark-large">
+      <h1 id="hero-heading">Content systems for teams that can't afford inconsistency.</h1>
+      <p class="hero-sub">We help ambitious scale-ups design and implement content systems — the language infrastructure and AI-assisted tooling that keep your content consistent, compliant, and clear across every touchpoint.</p>
+      <img src="/images/hero-image.jpg" alt="Editorial photo" class="hero-image">
+    </div>
+  </section>
 
-        <h2 id="contact-heading">Let's have a coffee and chat.</h2>
-
-        <a href="mailto:joe@bertino.co" class="cta-link">
-          joe@bertino.co <span aria-hidden="true">&nbsp;→</span>
-        </a>
-      </div>
-
-      <div class="footer-bottom">
-        <p class="footer-copy">© 2026 Bertino Consulting AB — Content systems at scale</p>
-        <ul class="footer-social" role="list">
-          <li><a href="https://www.linkedin.com/in/jjbert/" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
-          <li><a href="https://x.com/jjbert" rel="noopener noreferrer" aria-label="Twitter">Twitter</a></li>
-          <li><a href="https://github.com/bertinoco" rel="noopener noreferrer" aria-label="GitHub">GitHub</a></li>
-        </ul>
+  <!-- ABOUT -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-grid">
+        <div class="section-label">
+          <span id="about-heading">About</span>
+        </div>
+        <div class="section-body">
+          <p>Bertino Consulting is a content systems practice led by Joe Bertino, a practitioner who designs the language infrastructure behind complex products.</p>
+          <p>For over a decade, Joe has worked embedded inside leading fintechs — including Klarna, Tink, and Trustly — designing content systems that support compliance and sustainable growth.</p>
+          <p>Today, that same approach extends beyond fintech into media and gaming. His current embedded engagement is with Mojang Studios, where he leads UX writing across the Minecraft player experience. Joe works directly in codebases and design systems — creating PRs, managing branches, and shipping alongside engineers and design system leads, not just upstream of them.</p>
+          <p>Originally from upstate New York, Joe has worked with agencies and startups across New York City, San Francisco, and Copenhagen. He's been based in Stockholm since 2014, where he lives with his wife and children.</p>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <!-- Scroll listener: adds .scrolled to nav when page scrolls past 10px -->
-  <script>
-    (function () {
-      var nav = document.getElementById('nav');
-      function onScroll() {
-        nav.classList.toggle('scrolled', window.scrollY > 10);
-      }
-      window.addEventListener('scroll', onScroll, { passive: true });
-    })();
-  </script>
+  <!-- SERVICES -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-grid">
+        <div class="section-label">
+          <span id="services-heading">Services</span>
+        </div>
+        <div class="section-body">
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>Embedded consultancy</h3>
+              <p>I join your product or UX team as an embedded partner, helping you design, test, and scale language systems from the inside. This model accelerates delivery while building long-term content operations that stay clear, compliant, and consistent after I leave.</p>
+            </article>
+            <article class="service-card">
+              <h3>Fractional advisor</h3>
+              <p>I provide ongoing strategic support for solo content designers and UX writers — acting as a senior partner to review work, set priorities, and build team confidence. This model helps growing organizations maintain quality and momentum without the overhead of a full-time hire.</p>
+            </article>
+            <article class="service-card">
+              <h3>Audits as a service</h3>
+              <p>I conduct focused audits of your UX content and AI-assisted workflows to uncover gaps, inconsistencies, and opportunities for optimization. You'll receive actionable insights, prioritized recommendations, and a roadmap for improving clarity, compliance, and discoverability at scale.</p>
+            </article>
+            <article class="service-card">
+              <h3>Something else?</h3>
+              <p>Get in touch to schedule a discovery call or submit a custom proposal. If I can't help, I'll do my best to refer you to someone great.</p>
+            </article>
+          </div>
 
-</body>
-</html>
+          <div class="callout-card">
+            <p class="callout-label">How I like to collaborate</p>
+            <p>I work best as part of your team — hybrid in Stockholm or fully remote across the EU. Engagements start at six months, billed hourly at 1&nbsp;200&nbsp;SEK. I'm open to occasional travel when it adds value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section id="clients" aria-labelledby="clients-heading">
+    <div class="container">
+      <div class="section-grid">
+        <div class="section-label">
+          <span id="clients-heading">Clients</span>
+        </div>
+        <div class="section-body">
+          <div class="clients-grid">
+            <div class="client-column">
+              <p class="client-column-label">Financial services</p>
+              <ul role="list">
+                <li>Klarna</li>
+                <li>Trustly</li>
+                <li>Tink by Visa</li>
+                <li>Swedbank Pay × BBH</li>
+                <li>Bambora by Worldline</li>
+                <li>Transfer Galaxy</li>
+              </ul>
+            </div>
+            <div class="client-column">
+              <p class="client-column-label">Media & gaming</p>
+              <ul role="list">
+                <li>Nextory</li>
+                <li>Minecraft: Bedrock Edition</li>
+                <li>Minecraft Dungeons II</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% if site.posts.size > 0 %}
+{% assign latest_post = site.posts.first %}
+<section class="latest-post-callout" aria-label="Latest post">
+  <div class="container">
+    <span class="latest-post-label">Latest</span>
+    <h2 class="latest-post-title">
+      <a href="{{ latest_post.url }}">{{ latest_post.title }}</a>
+    </h2>
+    <p class="latest-post-meta">{{ latest_post.date | date: "%B %-d, %Y" }}</p>
+  </div>
+</section>
+{% endif %}

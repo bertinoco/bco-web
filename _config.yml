@@ -1,0 +1,8 @@
+title: Bertino Consulting
+description: "Content systems for ambitious product teams"
+url: "https://bertino.co"
+baseurl: ""
+permalink: /blog/:slug/
+
+plugins:
+  - jekyll-feed
