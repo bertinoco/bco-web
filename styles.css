@@ -335,14 +335,14 @@ a {
   align-items: center;
   font-size: 1.125rem;
   font-weight: 500;
-  color: var(--color-primary);
+  color: var(--color-footer-text);
   text-decoration: underline;
   text-underline-offset: 4px;
-  transition: opacity 0.15s ease;
+  transition: color 0.15s ease;
 }
 
 .cta-link:hover {
-  opacity: 0.8;
+  color: var(--color-primary);
 }
 
 .footer-bottom {
@@ -365,7 +365,7 @@ a {
 
 .footer-social a {
   font-size: 0.8125rem;
-  color: rgba(250, 250, 250, 0.5);
+  color: var(--color-footer-text);
   transition: color 0.15s ease;
 }
 
