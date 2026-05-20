@@ -384,9 +384,8 @@ a {
     font-size: 0.8125rem;
   }
 
-  .nav-logo-text,
   .nav-wordmark {
-    display: none; /* show only the mark on small screens */
+    height: 1.5rem;
   }
 
   /* Hero */
