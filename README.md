@@ -1,14 +1,14 @@
-# Bertino Consulting
+# Bertino Consulting Website
 
 Professional website for Bertino Consulting, a content systems practice specializing in language infrastructure and AI-assisted content workflows.
 
-## Live Site
+## Live
 
 Visit: [bertino.co](https://bertino.co)
 
 ---
 
-## Built With
+## Stack
 
 - **HTML5** — Semantic markup for accessibility and SEO
 - **CSS3** — Custom design system with responsive layout
@@ -18,7 +18,7 @@ Visit: [bertino.co](https://bertino.co)
 
 ---
 
-## Project Structure
+## Structure
 
 ```
 bertino-consulting/
@@ -29,7 +29,7 @@ bertino-consulting/
 
 ---
 
-## Design System
+## Design system
 
 ### Colors
 
@@ -46,13 +46,13 @@ bertino-consulting/
 - **All text:** Inter (Regular and Bold weights)
 - Headings use tighter tracking; body uses relaxed line height
 
-### Spacing Scale
+### Spacing scale
 
 Consistent 8px base unit: `8px, 16px, 24px, 32px, 48px, 64px, 96px`
 
 ---
 
-## SEO & Performance
+## SEO and performance
 
 - Schema.org structured data (`Person` + `Organization`)
 - Open Graph tags for social media sharing
@@ -64,7 +64,7 @@ Consistent 8px base unit: `8px, 16px, 24px, 32px, 48px, 64px, 96px`
 
 ---
 
-## Responsive Design
+## Responsive design
 
 Fully responsive with breakpoints at:
 
@@ -74,7 +74,7 @@ Fully responsive with breakpoints at:
 
 ---
 
-## Local Development
+## Local development
 
 1. Clone this repository
 2. Open `index.html` in your browser
