@@ -8,12 +8,6 @@ Visit: [bertino.co](https://bertino.co)
 
 ---
 
-## About
-Bertino Consulting is a content systems practice led by Joe Bertino — a practitioner who designs the language infrastructure behind complex products.
-
-
----
-
 ## Built With
 
 - **HTML5** — Semantic markup for accessibility and SEO
