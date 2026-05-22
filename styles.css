@@ -40,7 +40,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 100%;
 }
 
 body {
@@ -65,6 +65,32 @@ a {
   text-decoration: none;
 }
 
+/* ── Skip link ────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  background: var(--color-primary);
+  color: #fff;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  z-index: 200;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: var(--space-2);
+}
+
+/* ── Focus styles ─────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 /* ── Layout utility ───────────────────────────────────────── */
 .container {
   max-width: var(--max-width);
@@ -80,7 +106,7 @@ a {
   align-items: start;
 }
 
-.section-label span {
+.section-label h2 {
   display: block;
   font-size: 0.75rem;
   font-weight: 500;
@@ -191,6 +217,14 @@ a {
   object-fit: cover;
   border-radius: var(--radius);
   animation: fade-up 0.6s 0.2s ease-out both;
+}
+
+/* ── Scroll margin (accounts for sticky nav) ──────────────── */
+#about,
+#services,
+#clients,
+#contact {
+  scroll-margin-top: var(--nav-height);
 }
 
 /* ── About ────────────────────────────────────────────────── */
@@ -388,6 +422,7 @@ a {
   font-size: 0.8125rem;
   color: var(--color-footer-text);
   transition: color 0.15s ease;
+  padding: 12px 4px;
 }
 
 .footer-social a:hover {
@@ -402,11 +437,13 @@ a {
     animation: none;
   }
 
-  .service-card {
-    transition: none;
-  }
-
-  .cta-link .arrow {
+  #nav,
+  .nav-wordmark,
+  .nav-links a,
+  .service-card,
+  .cta-link,
+  .cta-link .arrow,
+  .footer-social a {
     transition: none;
   }
 }
