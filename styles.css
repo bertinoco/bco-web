@@ -5,12 +5,12 @@
 /* ── Custom properties ────────────────────────────────────── */
 :root {
   --color-primary:     #2A3FFF;
-  --color-bg:          #FAFAFA;
+  --color-bg:          #FBF3EC;
   --color-text:        #111111;
   --color-muted:       #555555;
-  --color-card-bg:     #F0F0F0;
+  --color-card-bg:     #F0E4D7;
   --color-footer-bg:   #111111;
-  --color-footer-text: #FAFAFA;
+  --color-footer-text: #FBF3EC;
   --color-border:      #E0E0E0;
   --color-placeholder: #D0D0D0;
 
