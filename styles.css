@@ -245,7 +245,7 @@ a {
   padding: var(--space-6);
 }
 
-.callout-label {
+.callout-card .callout-label {
   font-size: 1rem;
   font-weight: 700;
   color: var(--color-text);
