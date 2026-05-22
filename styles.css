@@ -394,6 +394,23 @@ a {
   color: var(--color-primary);
 }
 
+/* ── Reduced motion ───────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  #hero h1,
+  .hero-sub,
+  .hero-image {
+    animation: none;
+  }
+
+  .service-card {
+    transition: none;
+  }
+
+  .cta-link .arrow {
+    transition: none;
+  }
+}
+
 /* ── Responsive — 768px ───────────────────────────────────── */
 @media (max-width: 768px) {
   /* Nav */
