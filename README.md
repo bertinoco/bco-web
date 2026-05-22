@@ -24,6 +24,8 @@ Visit: [bertino.co](https://bertino.co)
 bertino-consulting/
 ├── index.html       # Main website file
 ├── styles.css       # All styling and responsive design
+├── images/          # Hero photo, logo assets, OG image
+├── .claude/         # Project slash commands (e.g. /design-review)
 └── README.md        # This file
 ```
 
@@ -37,9 +39,11 @@ bertino-consulting/
 |---|---|
 | Primary Blue | `#2A3FFF` |
 | Dark Text | `#111111` |
-| Off-white Background | `#FAFAFA` |
+| Warm Background | `#FBF3EC` |
 | Muted Text | `#555555` |
-| Card Background | `#F0F0F0` |
+| Card Background | `#F0E4D7` |
+| Footer Background | `#111111` |
+| Footer Text | `#FBF3EC` |
 
 ### Typography
 
