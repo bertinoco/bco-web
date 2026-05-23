@@ -24,6 +24,9 @@ Visit: [bertino.co](https://bertino.co)
 bertino-consulting/
 ├── index.html       # Main website file
 ├── styles.css       # All styling and responsive design
+├── robots.txt       # Crawler permissions (including AI bots)
+├── sitemap.xml      # Single-page sitemap
+├── llms.txt         # LLM visibility declaration (topical authority)
 ├── images/          # Hero photo, logo assets, OG image
 ├── .claude/         # Project slash commands (e.g. /design-review)
 └── README.md        # This file
@@ -73,9 +76,10 @@ Consistent 8px base unit: `8px, 16px, 24px, 32px, 48px, 64px, 96px`
 
 ## SEO and performance
 
-- Schema.org structured data (`Person` + `Organization`)
+- Schema.org structured data (`WebSite` + `Organization` + `Person`) with `knowsAbout`, `sameAs`, and linked `@id` entities
 - Open Graph tags for social media sharing
-- AI crawler permissions (GPTBot, Claude-Web)
+- `robots.txt` with explicit AI crawler permissions (GPTBot, ClaudeBot, PerplexityBot, anthropic-ai, cohere-ai)
+- `llms.txt` declaring topical authority for LLM indexing pipelines
 - Mobile-responsive design
 - Semantic HTML for accessibility
 - Optimized meta tags
