@@ -35,24 +35,39 @@ bertino-consulting/
 
 ### Colors
 
-| Token | Value |
-|---|---|
-| Primary Blue | `#2A3FFF` |
-| Dark Text | `#111111` |
-| Warm Background | `#FBF3EC` |
-| Muted Text | `#555555` |
-| Card Background | `#F0E4D7` |
-| Footer Background | `#111111` |
-| Footer Text | `#FBF3EC` |
+| Token | Value | Usage |
+|---|---|---|
+| Primary Blue | `#2E5CFF` | Links, interactive states, accent bars |
+| Primary Hover | `#1A43CC` | Hover state for primary blue |
+| Accent Coral | `#F2614A` | Decorative detail (footer arrow) |
+| Dark Text | `#111111` | Body copy, headings, footer background |
+| Secondary Text | `#6B6560` | Muted body copy, hero subtitle |
+| Warm Background | `#FBF3EC` | Page background |
+| Surface Tinted | `#F5EDE6` | Card backgrounds (callout) |
+| Border | `#E8E0D8` | Section dividers |
+| Footer Text | `#F5EDE6` | Footer headings and links |
+| Footer Muted | `#9A938C` | Footer copyright text |
 
 ### Typography
 
-- **All text:** Inter (Regular and Bold weights)
-- Headings use tighter tracking; body uses relaxed line height
+- **All text:** Inter (Regular 400, Medium 500, Bold 700)
+- Headings use tighter tracking (`letter-spacing: -0.02em`); body uses relaxed line height
+- Section labels use uppercase 0.75rem with 0.1em letter spacing
 
 ### Spacing scale
 
 Consistent 8px base unit: `8px, 16px, 24px, 32px, 48px, 64px, 96px`
+
+### Shape & shadow
+
+- **Border radius:** `6px` (sm), `12px` (default), `20px` (lg)
+- **Shadows:** `--shadow-sm`, `--shadow-md` available for elevated elements
+
+### Motion
+
+- **Durations:** `150ms` (fast), `200ms` (base), `300ms` (slow)
+- **Easing:** `cubic-bezier(0.16, 1, 0.3, 1)` (ease-out spring)
+- All animations respect `prefers-reduced-motion`
 
 ---
 
