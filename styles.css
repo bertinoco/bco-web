@@ -4,15 +4,22 @@
 
 /* ── Custom properties ────────────────────────────────────── */
 :root {
-  --color-primary:     #2A3FFF;
-  --color-bg:          #FBF3EC;
-  --color-text:        #111111;
-  --color-muted:       #555555;
-  --color-card-bg:     #F0E4D7;
-  --color-footer-bg:   #111111;
-  --color-footer-text: #FBF3EC;
-  --color-border:      #E0E0E0;
+  /* Colors */
+  --color-primary:        #2E5CFF;
+  --color-primary-hover:  #1A43CC;
+  --color-bg:             #FBF3EC;
+  --color-text:           #111111;
+  --color-text-secondary: #6B6560;
+  --color-muted:          #6B6560;
+  --color-card-bg:        #F5EDE6;
+  --color-surface-tinted: #F5EDE6;
+  --color-footer-bg:      #111111;
+  --color-footer-text:    #F5EDE6;
+  --color-footer-muted:   #9A938C;
+  --color-border:         #E8E0D8;
+  --color-accent-coral:   #F2614A;
 
+  /* Spacing */
   --space-1:  8px;
   --space-2:  16px;
   --space-3:  24px;
@@ -21,10 +28,24 @@
   --space-8:  64px;
   --space-12: 96px;
 
-  --radius: 12px;
+  /* Shape */
+  --radius:    12px;
+  --radius-sm: 6px;
+  --radius-lg: 20px;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.06);
+
+  /* Motion */
+  --duration-fast:   150ms;
+  --duration-base:   200ms;
+  --duration-slow:   300ms;
+  --ease-out:        cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
   --max-width: 960px;
   --font-base: 'Inter', sans-serif;
-
   --nav-height: 64px;
 }
 
@@ -100,7 +121,7 @@ a {
 /* Two-column section layout: label | body */
 .section-grid {
   display: grid;
-  grid-template-columns: 160px 1fr;
+  grid-template-columns: 200px 1fr;
   gap: var(--space-6);
   align-items: start;
 }
@@ -124,7 +145,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  transition: background-color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: background-color var(--duration-base) ease, border-bottom-color var(--duration-base) ease;
   border-bottom: 1px solid transparent;
 }
 
@@ -156,7 +177,7 @@ a {
 .nav-wordmark {
   height: 2.65rem;
   width: auto;
-  transition: height 0.25s ease;
+  transition: height var(--duration-slow) var(--ease-out);
 }
 
 #nav.scrolled .nav-wordmark {
@@ -172,7 +193,7 @@ a {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--color-text);
-  transition: color 0.15s ease;
+  transition: color var(--duration-fast) ease;
 }
 
 .nav-links a:hover {
@@ -203,7 +224,7 @@ a {
 
 .hero-sub {
   font-size: 1.125rem;
-  color: var(--color-muted);
+  color: var(--color-text-secondary);
   max-width: 60ch;
   line-height: 1.7;
   margin-bottom: var(--space-8);
@@ -256,7 +277,7 @@ a {
 
 .service-card {
   padding: 0;
-  transition: transform 0.2s ease;
+  transition: transform var(--duration-base) var(--ease-out);
 }
 
 .service-card:hover {
@@ -282,7 +303,7 @@ a {
 
 .service-card p {
   font-size: 0.9375rem;
-  color: var(--color-muted);
+  color: var(--color-text-secondary);
   line-height: 1.7;
 }
 
@@ -379,11 +400,11 @@ a {
   display: inline-flex;
   align-items: center;
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-footer-text);
   text-decoration: underline;
   text-underline-offset: 4px;
-  transition: color 0.15s ease;
+  transition: color var(--duration-fast) ease;
 }
 
 .cta-link:hover {
@@ -392,7 +413,8 @@ a {
 
 .cta-link .arrow {
   display: inline-block;
-  transition: transform 0.2s ease;
+  color: var(--color-accent-coral);
+  transition: transform var(--duration-base) var(--ease-out);
 }
 
 .cta-link:hover .arrow {
@@ -404,12 +426,12 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-top: var(--space-4);
-  border-top: 1px solid rgba(250, 250, 250, 0.12);
+  border-top: 1px solid rgba(245, 237, 230, 0.12);
 }
 
 .footer-copy {
   font-size: 0.8125rem;
-  color: rgba(250, 250, 250, 0.5);
+  color: var(--color-footer-muted);
 }
 
 .footer-social {
@@ -420,7 +442,7 @@ a {
 .footer-social a {
   font-size: 0.8125rem;
   color: var(--color-footer-text);
-  transition: color 0.15s ease;
+  transition: color var(--duration-fast) ease;
   padding: 12px 4px;
 }
 
