@@ -12,7 +12,6 @@
   --color-footer-bg:   #111111;
   --color-footer-text: #FBF3EC;
   --color-border:      #E0E0E0;
-  --color-placeholder: #D0D0D0;
 
   --space-1:  8px;
   --space-2:  16px;
@@ -40,7 +39,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 100%;
 }
 
 body {
@@ -65,6 +64,32 @@ a {
   text-decoration: none;
 }
 
+/* ── Skip link ────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  background: var(--color-primary);
+  color: #fff;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  z-index: 200;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: var(--space-2);
+}
+
+/* ── Focus styles ─────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 /* ── Layout utility ───────────────────────────────────────── */
 .container {
   max-width: var(--max-width);
@@ -80,7 +105,7 @@ a {
   align-items: start;
 }
 
-.section-label span {
+.section-label h2 {
   display: block;
   font-size: 0.75rem;
   font-weight: 500;
@@ -154,6 +179,12 @@ a {
   color: var(--color-primary);
 }
 
+/* ── Animations ───────────────────────────────────────────── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 /* ── Hero ─────────────────────────────────────────────────── */
 #hero {
   padding-top: var(--space-12);
@@ -167,6 +198,7 @@ a {
   letter-spacing: -0.02em;
   max-width: 16ch;
   margin-bottom: var(--space-4);
+  animation: fade-up 0.5s ease-out both;
 }
 
 .hero-sub {
@@ -175,6 +207,7 @@ a {
   max-width: 60ch;
   line-height: 1.7;
   margin-bottom: var(--space-8);
+  animation: fade-up 0.5s 0.1s ease-out both;
 }
 
 .hero-image {
@@ -182,6 +215,15 @@ a {
   aspect-ratio: 16 / 10;
   object-fit: cover;
   border-radius: var(--radius);
+  animation: fade-up 0.6s 0.2s ease-out both;
+}
+
+/* ── Scroll margin (accounts for sticky nav) ──────────────── */
+#about,
+#services,
+#clients,
+#contact {
+  scroll-margin-top: var(--nav-height);
 }
 
 /* ── About ────────────────────────────────────────────────── */
@@ -214,6 +256,11 @@ a {
 
 .service-card {
   padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
 }
 
 .service-card h3::after {
@@ -340,7 +387,16 @@ a {
 }
 
 .cta-link:hover {
-  color: var(--color-primary);
+  color: var(--color-footer-text);
+}
+
+.cta-link .arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.cta-link:hover .arrow {
+  transform: translateX(5px);
 }
 
 .footer-bottom {
@@ -365,10 +421,35 @@ a {
   font-size: 0.8125rem;
   color: var(--color-footer-text);
   transition: color 0.15s ease;
+  padding: 12px 4px;
 }
 
 .footer-social a:hover {
-  color: var(--color-primary);
+  color: var(--color-footer-text);
+  text-decoration: underline;
+}
+
+#contact :focus-visible {
+  outline-color: var(--color-footer-text);
+}
+
+/* ── Reduced motion ───────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  #hero h1,
+  .hero-sub,
+  .hero-image {
+    animation: none;
+  }
+
+  #nav,
+  .nav-wordmark,
+  .nav-links a,
+  .service-card,
+  .cta-link,
+  .cta-link .arrow,
+  .footer-social a {
+    transition: none;
+  }
 }
 
 /* ── Responsive — 768px ───────────────────────────────────── */
