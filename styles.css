@@ -4,14 +4,14 @@
 
 /* ── Custom properties ────────────────────────────────────── */
 :root {
-  --color-primary:     #1C5236;
+  --color-primary:     #2A3FFF;
   --color-bg:          #FBF3EC;
   --color-text:        #111111;
-  --color-muted:       #5C4A3A;
+  --color-muted:       #555555;
   --color-card-bg:     #F0E4D7;
   --color-footer-bg:   #111111;
   --color-footer-text: #FBF3EC;
-  --color-border:      #D4C4B4;
+  --color-border:      #E0E0E0;
 
   --space-1:  8px;
   --space-2:  16px;
