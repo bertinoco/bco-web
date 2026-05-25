@@ -1,10 +1,6 @@
 # Bertino Consulting Website
 
-Professional website for Bertino Consulting, a content systems practice specializing in language infrastructure and AI-assisted content workflows.
-
-## Live
-
-Visit: [bertino.co](https://bertino.co)
+This is a static website (vanilla HTML and CSS) for Bertino Consulting, a content systems practice that uses language to simplify complex products.
 
 ---
 
@@ -57,11 +53,11 @@ bertino-consulting/
 - Headings use tighter tracking (`letter-spacing: -0.02em`); body uses relaxed line height
 - Section labels use uppercase 0.75rem with 0.1em letter spacing
 
-### Spacing scale
+### Spacing
 
 Consistent 8px base unit: `8px, 16px, 24px, 32px, 48px, 64px, 96px`
 
-### Shape & shadow
+### Details
 
 - **Border radius:** `6px` (sm), `12px` (default), `20px` (lg)
 - **Shadows:** `--shadow-sm`, `--shadow-md` available for elevated elements
@@ -74,7 +70,7 @@ Consistent 8px base unit: `8px, 16px, 24px, 32px, 48px, 64px, 96px`
 
 ---
 
-## SEO and performance
+## Visibility and performance
 
 - Schema.org structured data (`WebSite` + `Organization` + `Person`) with `knowsAbout`, `sameAs`, and linked `@id` entities
 - Open Graph tags for social media sharing
@@ -97,13 +93,6 @@ Fully responsive with breakpoints at:
 
 ---
 
-## Local development
-
-1. Clone this repository
-2. Open `index.html` in your browser
-3. That's it — no build process needed.
-
----
 
 ## License
 
@@ -114,5 +103,3 @@ Fully responsive with breakpoints at:
 ## Contact
 
 Joe Bertino — [joe@bertino.co](mailto:joe@bertino.co)
-
-> This is a static website built with vanilla HTML and CSS for optimal performance and simplicity.
