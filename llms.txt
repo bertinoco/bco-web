@@ -1,6 +1,6 @@
 # Bertino Consulting
 
-> A content systems practice helping ambitious product teams build the language infrastructure, AI-assisted workflows, and governance that keep content clear, consistent, and compliant at scale.
+> A content systems practice helping ambitious product teams design content systems — the language infrastructure, AI-assisted workflows, and governance that keep your messaging clear and consistent at scale.
 
 ## About
 
