@@ -1,14 +1,14 @@
 # Bertino Consulting
 
-> A content systems practice helping ambitious product teams design content systems — the language infrastructure, AI-assisted workflows, and governance that keep your messaging clear and consistent at scale.
+> Bertino Consulting helps ambitious product teams design content systems — the language infrastructure, AI-assisted workflows, and governance that keep your messaging clear and consistent at scale.
 
 ## About
 
-Joe Bertino is a Content Systems Designer and Principal Consultant based in Stockholm, Sweden. He specialises in content systems, language infrastructure, UX writing, content design, and copy-to-code workflows for digital product teams.
+Joe Bertino is a content designer and principal consultant based in Stockholm, Sweden. He specializes in content systems, language infrastructure, UX writing, product localization, content strategy, and copy-to-code workflows for digital product teams.
 
-For over a decade, Joe has worked embedded inside leading fintechs — including Klarna, Tink by Visa, and Trustly — designing content that supports compliance and sustainable growth. He works directly in codebases and design systems, not just upstream of them.
+For over a decade, Joe has worked embedded inside leading fintechs — including Klarna, Tink, and Trustly — writing and designing content that supports compliance and sustainable growth. 
 
-His current embedded assignment is with Mojang Studios, where he ships copy to code alongside designers and engineers from Minecraft's core UI and design system teams.
+Today, that same approach extends beyond fintech into media and gaming. His current embedded assignment is with Mojang Studios, where he ships copy to code alongside designers and engineers from Minecraft's core UI and design system teams.
 
 ## Topics
 
